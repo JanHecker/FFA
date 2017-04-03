@@ -1,0 +1,55 @@
+# -------------------------------------------------------------------------------- #
+# ----------  FFA | Copyright 2017 by Jan Hecker (https://janhecker.de)  --------- #
+# -------  For support or feedback, please contact "LuckyLemonDE" on Skype  ------ #
+# -------------------------------------------------------------------------------- #
+
+# Set this to true, if you have a cracked server (stats will be saved on
+# player names instead of UUIDs.
+Online#Mode: false
+
+# Default GameMode for players (that do not have the permission 'ffa.admin').
+Default#GameMode: ADVENTURE
+
+# Set all locations here.
+# If the spawn location has no value, it will be when the plugins is enabled.
+# You can also set the spawn location with "/ffa setspawn".
+Locations:
+  Spawn:
+
+# In this radius, players are unable to hit each other.
+# The radius is around the spawn location.
+Spawn#Radius: 7.0
+
+# Set this to false if you want, that items can loose durability
+Unbreakable: true
+
+# Set all messages here.
+# Disable messages with e.g.:
+# -Join: ''
+Messages:
+  Prefix: '&7[&cFFA&7]'
+  Join: '&7Welcome back, %PLAYER%'
+  Kill: '&7You have killed %PLAYER%'
+  Death: '&7You were killed by %KILLER%'
+  DamagerInSpawn: '&cCan not attack %PLAYER%, you are in the spawn area'
+  DamagedInSpawn: '&cCan not attack %PLAYER%, he is in the spawn area'
+  No#Permission: '&cYou cannot execute this command.'
+  Broadcast:
+    Join: '&7%PLAYER% has joined the game.'
+    Quit: '&7%PLAYER% has quitted the game.'
+    Kill: '&7%PLAYER% has been killed by %KILLER%'
+
+# Here you can modify the Sidebar.
+# If you want to modify Values (KillValue, MapValue, DeathValue, KillstreakValue),
+# either change the variable after '&' or remove the colour code completely.
+Sidebar:
+  Enabled: true
+  Title: '&f&lYOUR SERVER NAME'
+  Kills: '&fKills:'
+  KillValue: '&e%VALUE%'
+  Map: '&fMap'
+  MapValue: '&d%VALUE%'
+  Deaths: '&fDeaths'
+  DeathValue: '&c%VALUE%'
+  Killstreak: '&fKillstreak:'
+  KillstreakValue: '&9%VALUE%'

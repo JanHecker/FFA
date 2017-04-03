@@ -1,0 +1,8 @@
+name: FFA
+version: 1.0.0
+main: de.janhecker.ffa.Main
+author: LuckyLemonDE
+website: https://janhecker.de
+
+commands:
+  ffa:
